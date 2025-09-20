@@ -18,7 +18,7 @@ function Footer() {
   <NavLink to="/"  className="footer-item" >Home</NavLink>
   <NavLink   to="/blogs" className="footer-item" id="project" ><span> BLOGS </span></NavLink>
 <NavLink   to="/know" className="footer-item" id="optimal" > <span>Know Your Universe </span></NavLink>
-<NavLink   to="/know" className="footer-item" id="optimal" > <span>About Us</span></NavLink>
+<NavLink   to="#" className="footer-item" id="optimal" > <span>About Us</span></NavLink>
 </div>
 
 </div>

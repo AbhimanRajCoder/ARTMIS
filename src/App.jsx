@@ -1,6 +1,7 @@
 import Navbar from './assets/Pages/Navbar/Navbar'
 import Home  from './assets/Pages/Home/Home'
 import Blogs  from './assets/Pages/Blogs/Blogs'
+import Know  from './assets/Pages/Know/Know'
 
 import './App.css'
 import { createBrowserRouter,RouterProvider} from 'react-router-dom'
@@ -18,6 +19,10 @@ function App() {
 {
   path:'/blogs',
   element:<><Blogs/></>
+},
+{
+  path:'/Know',
+  element:<><Know/></>
 }
 ])
 
