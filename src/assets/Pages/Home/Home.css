@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cedarville+Cursive&family=Orbitron:wght@400..900&family=Rock+3D&display=swap');
+
+
+.overlay{
+    position: absolute;
+    top:45%;
+    left:50%;
+    z-index:1001;
+    transform: translate(-50%,50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.video-section{ 
+    width:100vw;
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+}
+
+.banner-video{
+        width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    object-fit: cover;
+}
+
+
+.video-section::after {
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.4); 
+    z-index: 2;
+}
+
+.heading1{
+    color:#fff;
+    font-size:2.8rem;
+    text-transform: uppercase;
+    font-family: "Orbitron", sans-serif;
+
+}
+
+.cardssection{
+    width:100vw;
+    height:100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:60px;
+    font-family: "Cedarville Cursive", cursive;
+}
+
+.uppersection{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.cards{
+    width:350px;
+    height:250px;
+    cursor: pointer;
+    background-color: #000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:5px;
+    animation: anticlockwise 5s ease-in-out 0.2s infinite;
+    border:1px solid white;
+}
+
+.brand-cards{
+    width:300px;
+    height:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.brands-heading{
+    font-size: 4rem;
+    font-family: "Orbitron", sans-serif;
+    animation: colorchange 5s ease-in-out 0.2s infinite;
+}
+.pheading{
+    font-size: 1rem;
+      font-family: "Bungee", sans-serif;
+    color:#fff;
+}
+.ptext{
+    font-size: 0.7rem;
+    font-family: "Bungee", sans-serif;
+    color:#fff;
+}
+@keyframes colorchange {
+    0%{
+        color: #fff;
+    }
+    100%{
+        color: #d2c3f4;
+    }
+}
+.cardsimg{
+    width:240px;
+    height:240px;
+}
+
+.middlesection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap:25px;
+}
+
+.home-blog-link{
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: rgba(255, 255, 255, 0.08);  
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease-in-out;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.8rem;
+  margin-bottom:2%;
+
+}
+
+.home-blog-link:hover{
+      background: rgba(199, 137, 137, 0.08);  
+}
